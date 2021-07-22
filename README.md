@@ -1,5 +1,5 @@
 # Hiring Coders 2nd Challenge
-Landing page made as a challenge for Hiring Coders VTEX/Gama Academy bootcamp using HTML, CSS and JS that saves clients and products informations on localStorage.
+Landing page made as a challenge for Hiring Coders VTEX/Gama Academy bootcamp using HTML, CSS and JS that saves clients and products information on localStorage.
 
 ## Visit page
 https://hiringcoders2.vercel.app/
