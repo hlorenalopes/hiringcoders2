@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Cadastros da Store</title>
+</head>
+
+<body>
+  <h1>Cadastros da Store</h1>
+
+  <h2>Clientes</h2>
+  <form autocomplete="off">
+    <input id="nome-cliente" class="input" type="text" placeholder="Digite o nome">
+    <input id="email-cliente" class="input" type="email" placeholder="Digite e-mail">
+    <input id="cep-cliente" class="input" type="text" placeholder="Digite o CEP">
+    <input id="endereco-cliente" class="input" type="text" placeholder="Digite o endereço">
+    <button onClick="getDataClient()" type="submit">Cadastrar cliente</button>
+  </form>
+
+  <div class="line"></div>
+
+  <h2>Produtos</h2>
+  <form autocomplete="off">
+    <input id="nome-produto" class="input" type="text" placeholder="Digite o nome">
+    <input id="preco-produto" class="input" type="text" placeholder="Digite o preço">
+    <input id="descricao-produto" class="input" type="text" placeholder="Digite a descrição">
+    <button onClick="getDataProduct()" type="submit">Cadastrar produto</button>
+  </form>
+
+
+  <script>
+
+    function getDataClient() {
+      let inputNomeCliente = document.getElementById('nome-cliente');
+      localStorage.setItem('nome-cliente', inputNomeCliente.value);
+
+      let inputEmailCliente = document.getElementById('email-cliente');
+      localStorage.setItem('email-cliente', inputEmailCliente.value);
+
+      let inputCepCliente = document.getElementById('cep-cliente');
+      localStorage.setItem('cep-cliente', inputCepCliente.value);
+
+      let inputEnderecoCliente = document.getElementById('endereco-cliente');
+      localStorage.setItem('email-cliente', inputEnderecoCliente.value);
+
+      alert('Cliente cadastrado com sucesso!');
+    }
+
+    function getDataProduct() {
+      let inputNomeProduto = document.getElementById('nome-produto');
+      localStorage.setItem('nome-produto', inputNomeProduto.value);
+
+      let inputPrecoProduto = document.getElementById('preco-produto');
+      localStorage.setItem('preco-produto', inputPrecoProduto.value);
+
+      let inputDescricaoProduto = document.getElementById('descricao-produto');
+      localStorage.setItem('descricao-produto', inputDescricaoProduto.value);
+
+      alert('Produto cadastrado com sucesso!');
+    }
+
+  </script>
+</body>
+
+</html>

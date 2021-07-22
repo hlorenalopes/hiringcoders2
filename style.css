@@ -1,0 +1,95 @@
+:root {
+  --white: #fff;
+  --light: #f5eded;
+  --red: #d72323;
+  --black: #000;
+  --grey: #3e3636;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--light);
+  color: var(--grey);
+  text-align: center;
+}
+
+h1 {
+  margin-top: 64px;
+  color: var(--red);
+  font-size: 2rem;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: var(--red);
+  margin: 32px 0 32px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+p {
+  max-width: 355px;
+  margin: 0 auto;
+}
+
+.line {
+  margin: 21.5px auto 21.5px;
+  height: 1px;
+  background-color: var(--red);
+  width: 280px;
+}
+
+input {
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: var(--grey);
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.input {
+  margin-bottom: 12px;
+  width: 480px;
+  height: 48px;
+}
+
+#endereco-cliente {
+  height: 96px;
+}
+
+button {
+  background-color: var(--red);
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 700;
+  width: 205px;
+  height: 48px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 64px;
+}
+
+button:hover {
+  opacity: 80%;
+}
+
+@media only screen and (max-width: 576px) {
+  h1 {
+    font-size: 5rem;
+    line-height: 62px;
+  }
+
+  .input {
+    width: 304px;
+  }
+}
